@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online-Shop</title>
+    <style>
+          .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: rgb(146, 64, 64);
+            grid-gap: 1rem;
+            grid-template-rows: 70px 150px;
+            grid-auto-rows: 200px;
+          /* grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); */
+             }
+          .item{
+             margin: 3px;
+             border: 2px solid orchid; 
+             background-color: aquamarine;
+             }
+         .item:first-child{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 10px,60px;
+            background-color: blueviolet;
+             }
+          .item:nth-child(odd){
+             background-color: blueviolet;
+             }
+          .box{
+             background-color: yellow;
+             border: 1px solid black;
+             }
+          .wrapper{
+             display: grid;
+             border: 4px solid black;
+             grid-gap: 0.8rem;
+             grid-template-columns: repeat(3,1fr);
+             grid-template-rows: repeat(3,minmax(100px,280px));
+             }
+          #item-1{
+              grid-column-start: 1;
+              grid-column-end: 3;
+             }
+          #item-3{
+              grid-row-start:2 ;
+              grid-row-end: 4;
+             }
+          #item-5{
+              grid-column-start: 2;
+              grid-column-end: 4;
+             }
+          .card{
+              position: relative;
+              transition: all 1s linear;
+              transform: perspective(1000);
+              transform-style: preserve-3d;
+             }
+          .front,
+          .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+             } 
+          .front{
+             background: url(onlineshop.png);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              z-index: 2;
+              backface-visibility: hidden;
+             }
+           .back{
+              background: linear-gradient(
+             rgb(94, 94, 143),violet,rgb(145, 130, 130));
+             z-index: 1;
+             transform: rotateY(180deg);
+             }
+           .card:hover{
+             transform: rotateY(180deg);
+             }
+           .front-1,
+           .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+             }
+           .front-1{
+             background: url(onlineshop1.png);
+             background-position: center;
+             background-position-y: -11rem;
+             background-size: cover;
+             background-repeat: no-repeat;
+             z-index: 2;
+             backface-visibility: hidden;
+             }
+           .front-2,
+           .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+             }
+           .front-2{
+              background: url(onlineshop2.png);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              z-index: 2;
+              backface-visibility: hidden;
+             }
+           .front-3,
+           .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+             } 
+           .front-3{
+              background: url(onlineshop3.png);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              z-index: 2;
+              backface-visibility: hidden;
+             }
+           .front-4,
+           .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+          } 
+           .front-4{
+              background: url(onlineshop4.png);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              z-index: 2;
+              backface-visibility: hidden;
+             }
+           .front-5,
+           .back{
+             position: absolute;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+             }
+           .front-5{
+             background: url(onlineshop5.png);
+             background-position: center;
+             background-size: cover;
+             background-repeat: no-repeat;
+             z-index: 2;
+             backface-visibility: hidden;
+             }
+             input{
+                padding: 10px 20px;
+                margin: 5px;
+                background-color: dodgerblue;
+             }
+
+             input:hover{
+                background-color: aliceblue;
+                color: black;
+                cursor: pointer;
+             }
+
+       </style>
+    </head>
+ <body>
+   <a href="Intro.html"><input type="button" value="back"></a>
+    <div class="wrapper">
+        <span class="card" id="item-1">
+            <div class="front-1"></div> 
+            <div class="back">
+                <a href="onlineshoppingcover.jpg">
+                </a>
+            </div>
+          </span>
+        <span class="card" id="item-2">
+         <div class="front"></div> 
+         <div class="back">
+             <a href="onlineshoppingcover.jpg">
+                </a>
+         </div>
+          </span>
+        <span class="card" id="item-3">
+            <div class="front-2"></div> 
+            <div class="back">
+             <a href="onlineshoppingcover.jpg">
+             </a>
+         </div>
+          </span>
+        <span class="card" id="item-4">
+            <div class="front-3"></div> 
+            <div class="back">
+             <a href="onlineshoppingcover.jpg">
+            </a>
+          </div></span>
+        <span class="card" id="item-6">
+            <div class="front-4"></div> 
+            <div class="back">
+             <a href="onlineshoppingcover.jpg">
+             </a>
+          </div>
+          </span>
+        <span class="card" id="item-5">
+            <div class="front-5"></div> 
+             <div class="back">
+              <a href="onlineshoppingcover.jpg">
+               </a>
+              </div>
+          </span>
+      </div>
+   </body>
+</html>

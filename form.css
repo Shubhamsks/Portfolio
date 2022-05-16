@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Supermercado One', cursive;
+}
+
+body {
+    /* background-image: url( "https://media.giphy.com/media/3ov9k3oFVQqXTI1pFm/giphy-downsized-large.gif"); */
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+.codelogo{
+  height: 58vh;
+  position: inherit;
+}
+
+  .menu-area li a {
+    text-decoration: none;
+  }
+  
+  .menu-area li {
+    list-style-type: none;
+  }
+  
+  .custom-padding{
+    padding-top: 25px;
+  }
+  
+  nav {
+    position: fixed;
+    width: calc(100% - 72px);
+    margin: -25px auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+  }
+  
+  .logo {
+    width: 30%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10%;
+  }
+  
+  .menu-area li {
+    display: inline-block;
+  }
+  
+  .menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .menu-area a:hover {
+    background: tomato;
+    color: #fff;
+  }
+  
+  .menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+  }
+  
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+  
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+
+
+.cbg{
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.9;
+}
+
+
+/* .sidebar{
+    background-color: rgb(201, 193, 193);
+    width: 434px;
+    font-family: 'Supermercado One', cursive;
+    height: 100vh;
+} */
+
+
+.no :hover{
+    cursor: pointer;
+    /* background-color: rgb(201, 193, 193); */
+    color: dodgerblue
+}
+
+.sidebar nav{
+    padding: 66px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    /* background-color: blue; */
+    width: 82vw;
+}
+
+.container1{
+    display: flex;
+}
+
+.infocontainer{
+    margin: 144px auto;
+    /* background-color: aquamarine; */
+    height: 58vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.container  {
+    max-width: 80%;
+    padding: 34px;
+    margin: auto;
+}
+.container h1 {
+    margin: 24px;
+    text-align: center;
+    color: white;
+}
+p{
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+input,textarea{
+    
+    border: 2px solid white;
+    border-radius: 6px;
+    outline: none;
+    width: 80%;
+    margin: 6px auto;
+    padding: 6px;
+    font-size: 13px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    color: white;
+    background: dodgerblue;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+
+
+
+.submit{
+    font-size: 20px;
+    color: red;
+}
+
+.btn1{
+  color: white;
+  background: dodgerblue;
+  padding: 5px 1px;
+  /* margin-left:309px; */
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.btncontainer{
+  display: flex;
+  align-items: center;
+  max-width: 13%;
+  padding: 7px;
+  margin: auto; 
+}

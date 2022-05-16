@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Red+Hat+Mono:wght@300&family=Supermercado+One&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0ch;
+    box-sizing: border-box;
+    font-family: 'Supermercado One', cursive;
+}
+
+body {
+    background-image: url( "https://media.giphy.com/media/3ov9k3oFVQqXTI1pFm/giphy-downsized-large.gif");
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+.codelogo{
+  height: 58vh;
+  position: inherit;
+}
+/* 
+.bg{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.9;
+
+}
+ */
+
+  .menu-area li a {
+    text-decoration: none;
+  }
+  
+  .menu-area li {
+    list-style-type: none;
+  }
+  
+  .custom-padding{
+    padding-top: 25px;
+  }
+  
+  nav {
+    position: absolute;
+    width: calc(100% - 72px);
+    margin: -45px auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+  }
+.intronav{
+  position: absolute;
+  width: calc(100% - 72px);
+  margin: -24px auto;
+  padding: 10px 0;
+  background: #333;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2%;
+} 
+  
+
+
+  .logo {
+    width: 30%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10%;
+  }
+  
+  .menu-area li {
+    display: inline-block;
+  }
+  
+  .menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .menu-area a:hover {
+    background: tomato;
+    color: #fff;
+  }
+  
+  .menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+  }
+  
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+  
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+
+.main{
+    /* background-color: blue; */
+    width: 82vw;
+    display: contents;
+}
+
+
+
+
+.mbg{
+
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.9;
+}
+
+
+
+.navgif{
+    height: 100vh;
+    width: 74%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.container{
+    display: flex;
+    margin: 22px auto;
+}
+
+.infocontainer{
+    margin: 144px auto;
+    /* background-color: aquamarine; */
+    height: 58vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.hello{
+    padding: 10px;
+    font-size: 85px;
+    color: #c5d6e6;;
+    font-family: 'Supermercado One', cursive;
+
+}
+
+.name{
+    color:  #c5d6e6;
+    padding: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.about{
+    color: #c5d6e6;;
+    padding: 10px;
+    font-size: 50px;
+    font-family: 'Supermercado One', cursive;
+
+}
+
+.moreabout{
+    color: #c5d6e6;;
+    padding: 10px;
+    font-size: 20px;
+    font-family:  'Supermercado One', cursive;
+    margin-top: 24px;
+    }
+
+
+.buttons{
+    margin-top: 34px;
+}
+.buttons button{
+    padding: 10px 14px;
+    border-radius: 22px;
+    color: aliceblue;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3 px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: aliceblue;
+    color: dodgerblue;
+}
+.btn{
+  margin-top: 34px;
+}
+
+.btn button{
+    padding: 0px 14px;
+    border-radius: 22px;
+    color: aliceblue;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3 px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+  background-color: aliceblue;
+  color: dodgerblue;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.devpic img{
+  height: 66%;
+  position: absolute;
+}
+
+.contactform{
+    font-family: 'Playfair Display', serif;
+}
+
+.contactform h1{
+    font-family: 'Supermercado One', cursive;   
+}
+
+/* .blogcontainer h1{
+  font-family: 'Supermercado One', cursive;
+  color: #c5d6e6;
+  padding-top: 30px;
+  text-align: center;
+  ;
+
+} */
+
+.blogitem{
+  margin: 20px;
+}
+
+.introontainer{
+     margin: 18px auto;
+    /* background-color: aquamarine; */
+    height: 58vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+ h2{
+  color:  #c5d6e6;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+p { 
+  font-family: 'Supermercado One', cursive;
+  color:  #c5d6e6;
+  text-align: -webkit-center;
+}
+.intro h2{
+  margin: 11px;
+  color:  #c5d6e6;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+}
+
+.intro h1{
+  font-family: 'Supermercado One', cursive;
+  color: #c5d6e6;
+  padding-top: 30px;
+  text-align: center;
+  /* padding-top: 12px;
+  margin: 11px;
+  color:  #c5d6e6;
+  font-family: 'Playfair Display', serif;
+  text-align: center; */
+}
+
+
+.skiilcontainer{
+  padding: 12px;
+  
+}
+
+.skill{
+  width: 256px;
+  height: 10px;
+  border: 2px solid red;
+}
+
+.skill:hover{
+  cursor: pointer;
+}
+.skillitem{
+  display: flex;
+  color:  #c5d6e6;
+  align-items: center;
+}
+
+
+.hundred{
+  width: 265px;
+  background-color: rgb(149, 190, 108);
+}
+
+.fifty{
+  width: 125px;
+  background-color: rgb(101, 168, 34);
+}
+
+.t5{
+  width: 100px;
+  background-color: chartreuse;
+}
+/* .btn{
+  display: flex;
+  margin-top: 3px;
+  position: absolute;
+  padding: 10px -1px;
+  border-radius: 22px;
+  color: aliceblue;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0 3 px;
+  cursor: pointer;
+} */
+
+
+/* Blog  */
+.html{
+  height: 14vh;
+}
+
+.css{
+  height: 14vh;
+}
+
+.js{
+  height: 14vh;
+}
+
+.bs{
+  height: 14vh;
+}
+
+.btn1{
+  color: white;
+  background: dodgerblue;
+  padding: 5px 1px;
+  margin-left:auto;
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.btncontainer{
+  display: flex;
+  align-items: center;
+  max-width: 25%;
+  padding: 7px;
+  margin: auto; 
+  margin-left: auto;
+}
+
+.btn1:hover{
+  background-color: aliceblue;
+  color: rgb(17, 17, 18)
+}
+
+.section_2{
+  margin-top: 153px;
+  box-shadow: 0px 1px 10px rgb(100, 85, 74);
+  max-width: 100%;
+  height: 20rem;
+}
+
+.section_2 h1{
+  font-size: 1.8rem;
+  background-color: rgba(125, 67, 219, 0.466);
+  color: #d3e721;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section_2_i{
+  margin-top: 14px;
+  box-shadow: 0px 1px 10px rgb(100, 85, 74);
+  max-width: 100%;
+  height: 20rem;
+}
+
+.section_2_i h1{
+  font-size: 1.8rem;
+  background-color: rgba(125, 67, 219, 0.466);
+  color: #d3e721;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.section_2_1{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.section_2_1::-webkit-scrollbar {
+  z-index: 20;
+  height: 20px;
+} 
+.section_2_1 div{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items: center;
+  margin: 0 1px;
+  flex-grow: 2;
+  background-color: rgb(194 194 209 / 65%);
+  height: 284px;
+  width: 459px;
+}
+.section_2_1 div:hover{
+  background-color: rgb(226, 147, 147);
+}
+.section_2_1 div img{
+  border-radius: 2px;
+  border:2px solid rgb(240, 65, 65);
+  height: 80%;
+  width: 164px;
+}
+.section_2_1 div h3{
+  letter-spacing:1px;
+  font-size:1.6rem;
+  color:rgb(0, 0, 0);
+  text-shadow: 2px 1px 2px rgb(255, 255, 255);
+}
+.section_2_1 div h2{
+  margin-top: -3px;
+  animation: blinking_2 1s infinite;
+}
+
+
+@keyframes blinking_2{
+  0%{
+      color:brown;
+  }
+  50%{
+     color:black;
+  }
+  100%{
+      color:brown;
+  }
+}
